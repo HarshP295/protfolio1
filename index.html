@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .navbar {
+      background-color: #1d1d1d;
+      transition: background-color 0.3s;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff !important;
+    }
+    .navbar-nav .nav-link {
+      color: #ddd !important;
+      font-size: 1.1rem;
+      padding: 10px 15px;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #1e90ff !important;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .navbar-toggler-icon {
+      background-color: #fff;
+    }
+    .top {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #about {
+      position: relative;
+      padding: 0;
+    }
+    #about img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      transition: transform 0.3s ease-in-out;
+      object-fit: cover;
+    }
+    #about img:hover {
+      transform: scale(1.1);
+    }
+    .skills {
+      background: #f8f9fa;
+      padding: 40px 20px;
+    }
+    .skills .skill-item {
+      font-size: 1.2rem;
+      position: relative;
+    }
+    .skill-item:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.3s;
+      background-color: #1e3c72;
+    }
+    .tooltip {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border: none;
+      transition: transform 0.3s;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .card-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .project-card:hover .card-overlay {
+      opacity: 1;
+    }
+    .overlay-content {
+      text-align: center;
+    }
+    .overlay-content h5 {
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+    }
+    .overlay-content p {
+      margin-bottom: 15px;
+    }
+    .project-gradient {
+      position: relative;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      width: 100%;
+      height: 200px; 
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .project-gradient:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    }
+    footer {
+      background: #212529;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .contact-icons a {
+      font-size: 24px;
+      color: #333;
+      margin: 0 15px;
+    }
+    .contact-icons a:hover {
+      color: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#home">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="top">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi! I'm Harsh Patil<br>Second year INFT student at VESIT</p>
+  </div>
+  <section id="about" class="container my-5">
+    <h2>About Me</h2>
+    <div class="d-flex justify-content-center mb-4">
+      <img src="./HarshPatil_D10C.JPG" alt="Harsh Patil" class="img-fluid">
+    </div>
+    <p>Hi, I'm Harsh Patil, a passionate software engineer and a continuous learner with a focus on developing innovative solutions using technology. I have a strong background in Java, Data Structures, C, DBMS, and DevOps tools like Git and Github. Currently, I'm building my own portfolio using HTML, CSS, and Bootstrap to showcase my skills and projects.</p>
+    <p>I believe in the power of technology to solve real-world problems, and I’m always excited about learning new tools and frameworks to stay ahead of the curve. From designing intuitive websites to diving deep into data structures, I thrive on challenges and aim to create solutions that are both efficient and impactful.</p>
+    <p>When I’m not coding, you can find me experimenting with graphics and video editing, playing games, or working on fun personal projects. Feel free to explore my work and connect with me!</p>
+  </section>
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Used in web development projects">
+          HTML
+          <div class="tooltip">Used in this project</div>
+        </div>
+        <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Styled websites and applications">
+          CSS
+          <div class="tooltip">Styled websites and applications</div>
+        </div>
+        <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Implemented interactive functionality in websites">
+          JavaScript
+          <div class="tooltip">Implemented interactive functionality in current website</div>
+        </div>
+        <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Worked with databases in projects">
+          DBMS
+          <div class="tooltip">Worked with databases for DBMS mini project in sem 3</div>
+        </div>
+        <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Used for responsive design">
+          Bootstrap
+          <div class="tooltip">Used to get components for the current website</div>
+        </div>
+        <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Backend development and logic implementation">
+          Java
+          <div class="tooltip">Used in sem 2 mini project to make a Candidate/exams management system</div>
+        </div>
+        <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Optimized algorithms for better performance">
+          Data Structures and Algorithms
+          <div class="tooltip">Optimization of sem 2 mini project</div>
+        </div>
+        <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Used for version control in projects">
+          Git & GitHub
+          <div class="tooltip">Version control of current and several other projects</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="container my-5">
+    <h2>Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card project-card">
+          <div class="project-gradient">
+            <div class="card-overlay">
+              <div class="overlay-content">
+                <h5>Candidate/Exam management system</h5>
+                <p>It helps the candidates track exams they are eligible for based on the eligibility criteria of the exams and information of the students. Made use of Java and several other data structure concepts to complete the project.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <div class="project-gradient">
+            <div class="card-overlay">
+              <div class="overlay-content">
+                <h5>FinTeen</h5>
+                <p>A web application that teenagers can use to track their finances and get help with budgeting. I led my team to achieve success in this project.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <div class="project-gradient">
+            <div class="card-overlay">
+              <div class="overlay-content">
+                <h5>Portfolio website</h5>
+                <p>Built the website you are currently viewing with the help of HTML, CSS, and Bootstrap.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <section id="contact" class="container my-5">
+    <h2>Contact Me</h2>
+    <div class="contact-icons text-center">
+      <a href="mailto:2023.harsh.patil@ves.ac.in" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="tel:8451890209" target="_blank"><i class="fas fa-phone-alt"></i></a>
+      <a href="https://www.instagram.com/harsh.2_9_5/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Harsh Patil. All rights reserved.</p>
+  </footer>
+</body>
+</html>
