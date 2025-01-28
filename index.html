@@ -9,7 +9,7 @@
   
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
     .navbar {
       background-color: #1d1d1d;
@@ -149,7 +149,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#home">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -158,6 +158,7 @@
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
         </ul>
       </div>
     </div>
@@ -188,8 +189,8 @@
           <div class="tooltip">Styled websites and applications</div>
         </div>
         <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Implemented interactive functionality in websites">
-          C Programming
-          <div class="tooltip">learnt During sem 2 and used to solve dsa on leetcode</div>
+          JavaScript
+          <div class="tooltip">used to make static yet responsive website</div>
         </div>
         <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Worked with databases in projects">
           DBMS
@@ -201,11 +202,11 @@
         </div>
         <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Backend development and logic implementation">
           Java
-          <div class="tooltip">Used in sem 2 mini project to make a Candidate/exams management system</div>
+          <div class="tooltip">Used in sem 2 mini project to make a Hotels/customers management system</div>
         </div>
         <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Optimized algorithms for better performance">
-          Data Structures and Algorithms
-          <div class="tooltip">Optimization of sem 2 mini project</div>
+          Tailwind
+          <div class="tooltip">Made several small projects</div>
         </div>
         <div class="col-md-3 skill-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Used for version control in projects">
           Git & GitHub
@@ -247,14 +248,42 @@
             <div class="card-overlay">
               <div class="overlay-content">
                 <h5>Portfolio website</h5>
-                <p>Built this website with the help of HTML, CSS, and Bootstrap.</p>
+                <p>Build a portfolio website using HTML , CSS and Bootstrap showcasing my skills and implementing the knowledge of the concepts .  </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </section>  
+  
+  <section id="education" class="container my-5">
+    <h2 class="text-center mb-4">Education</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card text-white" style="background: linear-gradient(135deg, #8e44ad, #2980b9);">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bold;"><i class="fas fa-university me-2"></i>Vivekanand Education Society's Institute of Technology (VESIT)</h5>
+            <p>Bachelor of Engineering(B.E.) in IT| VESIT,Mumbai</p>
+            <p>First year CGPA: 8.95<br>
+              Second year CGPA till Sem 3: 9.2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card text-white" style="background: linear-gradient(135deg, #8e44ad, #2980b9);">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bold;"><i class="fas fa-school me-2"></i>Secondary and Higher Secondary Education</h5>
+            <p>12th Std | Mulund Vidya Mandir<br>
+            Grade: 72%</p>
+            <p>10th Std | St. Xaviers High School<br>Grade: 82%</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+  
+   
  <section id="contact" class="container my-5">
     <h2>Contact Me</h2>
     <div class="contact-icons text-center">
@@ -268,5 +297,6 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  
 </body>
-</html>
+</html> 
